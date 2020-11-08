@@ -1,0 +1,164 @@
+body {
+	width: 95vw;
+	margin: 5rem auto;
+	font-size: 2rem;
+	font-family: "helvetica neue",helvetica;
+	color: #38373e;
+}
+
+header h1 a {
+	color: #38373e;
+	text-decoration: none;
+	font-size: 3.5rem;
+	font-weight: 600;
+}
+
+header nav ul {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+header nav ul li {
+	margin-top: 3rem;
+}
+
+header nav ul li a {
+	color: #38373e;
+	text-decoration: none;
+}
+
+header nav ul li a.selected {
+	color: transparent;
+	background-color: #38373e;
+	padding: .75rem;
+}
+
+header {
+	margin-bottom: 7rem;
+}
+
+main h2 {
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 5rem;
+	padding-bottom: 3rem;
+	border-bottom: .2rem solid #38373e;
+	text-transform: uppercase;
+	line-height: 3.5rem;
+}
+
+main p {
+	line-height: 3rem;
+	margin-bottom: 3rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+main img {
+	display: block;
+	margin: 0 auto 3rem auto;
+}
+
+main h3 {
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 5rem;
+	padding-bottom: 3rem;
+	border-bottom: .2rem solid #38373e;
+}
+
+main h4 {
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 5rem;
+	text-transform: uppercase;
+}
+
+main a {
+	text-decoration: none;
+	color: #38373e;
+}
+
+main ul.blog li a {
+	color: firebrick;
+}
+
+main ul.blog li {
+	margin-bottom: 2rem;
+}
+
+main {
+	margin-bottom: 5rem;
+}
+
+ul.taglist, ul.postlist {
+	margin-bottom: 5rem;
+}
+
+ul.taglist li, ul.postlist li{
+	margin-bottom: 3rem;
+}
+
+ul.taglist li a, ul.postlist li a {
+	background-color: #38373e;
+	color: #faf0e4;
+	padding: .75rem;
+}
+
+a.morelink {
+	display: inline-block;
+	background-color: #38373e;
+	color: #faf0e4;
+	padding: .75rem;
+	margin-bottom: 3rem;
+}
+
+nav.pagination a {
+	display: inline-block;
+	background-color: #38373e;
+	color: #faf0e4;
+	padding: 1.25rem;
+	margin-bottom: 3rem;
+}
+
+footer {
+	border-top: 0.2rem solid #38373e;
+	padding-top: 3rem;
+}
+
+@media (min-width: 800px) {
+	body {
+			width: 85vw;
+	}
+
+	header nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 32rem;
+		margin-top: 0;
+	}
+
+	header nav ul li {
+		margin-top: 0;
+	}
+
+	header nav {
+		position: absolute;
+		top: 5.5rem;
+		right: 7.5vw;
+	}
+}
+
+@media (min-width: 1000px) {
+	body {
+			width: 75vw;
+	}
+
+	header nav {
+		right: 12.5vw;
+	}
+}

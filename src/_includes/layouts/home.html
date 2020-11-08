@@ -1,0 +1,29 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+ 	<h2>{{ title }}</h2>
+	{{ content | safe }}
+	<h2>Posts</h2>
+	<ul class="bloglist">
+  	{% for item in pagination.items %}
+    <li>
+    	<a href="{{ item.url }}">
+				<h4>{{ item.data.title }}</h4>
+		    <img src="{{ item.data.image }}" alt="{{ item.data.summary }}"/>
+				<p>{{ item.data.summary }}</p>
+				<p><a class="morelink" href="{{ item.url }}">Read more</a></p>
+		  </a>
+    </li>
+    {% endfor %}
+   </ul>
+	 {% include "partials/pagination.html" %}
+	<h3>Featured Projects</h3>
+	{% for item in collections.featuredProjects %}
+		<a href="{{ item.url }}">
+			<h4>{{ item.data.title }}</h4>
+	    <img src="{{ item.data.image }}" alt="{{ item.data.summary }}"/>
+			<p>{{ item.data.summary }}</p>
+	  </a>
+	{% endfor %}
+	<p>We have more projects on our <a href="/projects">Project page</a></p>
+{% endblock %}

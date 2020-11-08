@@ -1,0 +1,30 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+ 	<h2>{{title }}</h2>
+	<p><time datetime="{{ date | w3DateFilter }}">Written on the {{ date | dateFilter }}</time></p>
+  {{ content | safe }}
+	{% if tags %}
+	  <h3>Filed under:</h3>
+		<ul class="taglist">
+	      {% for tag in tags %}
+	        <li>
+	          <a href="/tag/{{ tag | slug }}/">{{ tag | title | replace(' ', '') }}</a>
+	        </li>
+	      {% endfor %}
+		</ul>
+  {% endif %}
+
+{% set recommendedPosts = helpers.getSiblingContent(collections.blog, page) %}
+{% if recommendedPosts %}
+		<h3>Other recommended posts</h3>
+		<ul class="postlist">
+	  	{% for item in recommendedPosts %}
+	    <li>
+	    	<a href="{{ item.url }}">{{ item.data.title }}</a>
+	    </li>
+	    {% endfor %}
+	   </ul>
+{% endif %}
+
+{% endblock %}

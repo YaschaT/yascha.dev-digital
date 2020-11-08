@@ -1,0 +1,5 @@
+{
+	"layout": "layouts/project.html",
+	"permalink": "/project/{{ title | slug }}/index.html",
+	"custom_css": "body {background-color: #4f81a4;}header nav ul li a.selected{color: #4f81a4;}"
+}
