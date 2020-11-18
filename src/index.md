@@ -1,13 +1,13 @@
 ---
-title: 'A resource for front-end designers'
+title: 'Yascha-dev.digital'
 layout: 'layouts/home.html'
 pagination:
   data: collections.blog
-  size: 5
+  size: 2
 permalink: '{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
-paginationPrevText: 'See newer posts'
-paginationNextText: 'See older posts'
-custom_css: 'body {background-color: #aedfa8;}header nav ul li a.selected{color: #aedfa8;}'
+paginationPrevText: 'Bekijk nieuwere posts >'
+paginationNextText: 'Bekijk oudere posts >'
+custom_css: 'body {background-color: #FBFBFD;}header nav ul li a.selected{color: #FBFBFD;}'
 ---
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

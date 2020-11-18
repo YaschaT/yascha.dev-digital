@@ -2,6 +2,9 @@
 
 {% block content %}
  	<h2>{{ title }}</h2>
+    <div class="image1">
+    <img src="img/image1.png" alt=""></img>
+    </div>
 	{{ content | safe }}
 	<h2>Posts</h2>
 	<ul class="bloglist">
@@ -9,9 +12,10 @@
     <li>
     	<a href="{{ item.url }}">
 				<h4>{{ item.data.title }}</h4>
+
 		    <img src="{{ item.data.image }}" alt="{{ item.data.summary }}"/>
 				<p>{{ item.data.summary }}</p>
-				<p><a class="morelink" href="{{ item.url }}">Read more</a></p>
+				<p><a class="morelink" href="{{ item.url }}">Lees meer...</a></p>
 		  </a>
     </li>
     {% endfor %}
@@ -21,6 +25,7 @@
 	{% for item in collections.featuredProjects %}
 		<a href="{{ item.url }}">
 			<h4>{{ item.data.title }}</h4>
+
 	    <img src="{{ item.data.image }}" alt="{{ item.data.summary }}"/>
 			<p>{{ item.data.summary }}</p>
 	  </a>

@@ -1,13 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@100;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+
 body {
 	width: 95vw;
 	margin: 5rem auto;
 	font-size: 2rem;
 	font-family: "helvetica neue",helvetica;
 	color: #38373e;
+	scroll-behavior: smooth;
 }
 
+
+
+p {
+text-align: left;
+font-size: 1.3rem;
+font-weight: 300;
+font-family: Catamaran;
+}
+
+
+.wallpaper {
+	position: relative;
+	background-color: blue;
+	width: 100vw;
+	height: 20vh;
+	margin-left: -1.3rem;
+	margin-top: -10rem;
+}
+
+
+.image1 {
+width: 100vw;
+height: 50vh;
+}
+
+
+
+
 header h1 a {
-	color: #38373e;
+	color: blue;
 	text-decoration: none;
 	font-size: 3.5rem;
 	font-weight: 600;
@@ -15,27 +49,43 @@ header h1 a {
 
 header nav ul {
 	display: flex;
-	flex-direction: column;
-	margin-top: 2rem;
+	flex-direction: row;
+	margin-top: 11rem;
+	font-family: lato;
+	justify-content: center;
+	font-weight
 }
 
+
+
+
 header nav ul li {
-	margin-top: 3rem;
+	margin-top: 6rem;
 }
 
 header nav ul li a {
-	color: #38373e;
+	color: white;
 	text-decoration: none;
+	font-weight: 300;
+	padding: 1.7rem;
+
+}
+
+span {
+	font-size: 1.2rem;
+	font-family: Catamaran;
+
 }
 
 header nav ul li a.selected {
 	color: transparent;
-	background-color: #38373e;
-	padding: .75rem;
+	background-color: #0D01FF;
+	padding: 1rem;
+	border-radius: 7rem;
 }
 
 header {
-	margin-bottom: 7rem;
+	margin-bottom: 15rem;
 }
 
 main h2 {
@@ -43,9 +93,10 @@ main h2 {
 	font-weight: 600;
 	margin-bottom: 5rem;
 	padding-bottom: 3rem;
-	border-bottom: .2rem solid #38373e;
+	font-family: lato;
 	text-transform: uppercase;
 	line-height: 3.5rem;
+	color: blue;
 }
 
 main p {
@@ -67,7 +118,8 @@ main h3 {
 	font-weight: 600;
 	margin-bottom: 5rem;
 	padding-bottom: 3rem;
-	border-bottom: .2rem solid #38373e;
+	color:blue;
+	border-bottom: .1rem solid blue;
 }
 
 main h4 {
@@ -103,26 +155,30 @@ ul.taglist li, ul.postlist li{
 }
 
 ul.taglist li a, ul.postlist li a {
-	background-color: #38373e;
-	color: #faf0e4;
+	background-color: blue;
+	color: white;
 	padding: .75rem;
 }
 
 a.morelink {
 	display: inline-block;
-	background-color: #38373e;
+	background-color: blue;
 	color: #faf0e4;
-	padding: .75rem;
+	padding: 1.2rem;
 	margin-bottom: 3rem;
+	border-radius: 5rem;
+	font-size: 1.5rem;
 }
 
 nav.pagination a {
 	display: inline-block;
-	background-color: #38373e;
-	color: #faf0e4;
+	color: blue;
 	padding: 1.25rem;
-	margin-bottom: 3rem;
+	margin-bottom: 9rem;
 }
+
+
+
 
 footer {
 	border-top: 0.2rem solid #38373e;
