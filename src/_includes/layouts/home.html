@@ -6,7 +6,12 @@
     </div>
   <h2>{{ title }}</h2>
 	{{ content | safe }}
+
+
+
+  <div class="test">
 	<h2>Posts</h2>
+
 	<ul class="bloglist">
   	{% for item in pagination.items %}
     <li>
@@ -20,6 +25,9 @@
     </li>
     {% endfor %}
    </ul>
+
+  </div>
+
 	 {% include "partials/pagination.html" %}
 	<h3>Featured Projects</h3>
 	{% for item in collections.featuredProjects %}
