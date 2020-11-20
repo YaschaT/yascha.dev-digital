@@ -1,10 +1,10 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
- 	<h2>{{ title }}</h2>
     <div class="image1">
     <img src="img/image1.png" alt=""></img>
     </div>
+  <h2>{{ title }}</h2>
 	{{ content | safe }}
 	<h2>Posts</h2>
 	<ul class="bloglist">
@@ -15,7 +15,7 @@
 
 		    <img src="{{ item.data.image }}" alt="{{ item.data.summary }}"/>
 				<p>{{ item.data.summary }}</p>
-				<p><a class="morelink" href="{{ item.url }}">Lees meer...</a></p>
+				<p><a class="morelink" href="{{ item.url }}">Lees meer</a></p>
 		  </a>
     </li>
     {% endfor %}

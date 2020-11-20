@@ -1,5 +1,5 @@
 ---
-title: 'Hello and welcome?!'
+title: 'Homepage'
 layout: 'layouts/home.html'
 pagination:
   data: collections.blog
