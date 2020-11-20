@@ -49,6 +49,7 @@ header nav ul {
 
 header nav ul li {
 	color: blue;
+	padding: 1.7rem;
 }
 
 header nav ul li a {
