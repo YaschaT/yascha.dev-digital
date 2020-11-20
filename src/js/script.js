@@ -27,6 +27,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+anime({
+targets: 'a.morelink',
+translateX: -10,
+direction: 'alternate',
+loop: true,
+delay: function(el, i, l) {
+  return i * 140;
+},
+endDelay: function(el, i, l) {
+  return (l - i) * 200;
+}
+});
+
+
+
 	anime({
 		targets: 'p',
 		translateY: [50, 0],
@@ -48,6 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 		opacity: [0, 1],
 	})
+
+
+
+
 
 
   anime({

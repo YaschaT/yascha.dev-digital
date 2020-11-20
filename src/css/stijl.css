@@ -31,6 +31,7 @@ header h1 a {
 	font-weight: 600;
 }
 
+
 header nav ul {
 	display: flex;
 	justify-content: center;
@@ -38,12 +39,14 @@ header nav ul {
 	font-family: lato;
 	font-weight: 200;
 	color: blue;
+
 }
 
 
 header nav ul li {
 	color: blue;
 	padding: 1.7rem;
+	margin-bottom: 1.5rem;
 }
 
 header nav ul li a {
@@ -51,6 +54,7 @@ header nav ul li a {
 	text-decoration: none;
 	font-weight: 300;
 	padding: 1.7rem;
+
 
 }
 
@@ -107,8 +111,6 @@ img {
 	max-width: 100%;
 }
 
-
-
 .image1 {
 width: 100%;
 height: 50vh;
@@ -164,7 +166,10 @@ ul.taglist li, ul.postlist li{
 ul.taglist li a, ul.postlist li a {
 	background-color: blue;
 	color: white;
-	padding: .75rem;
+	padding:1rem;
+	border-radius: 5rem;
+	font-weight: 400;
+	font-size: 1.2rem;
 }
 
 a.morelink {
@@ -180,8 +185,11 @@ a.morelink {
 nav.pagination a {
 	display: inline-block;
 	color: blue;
-	padding: 1.25rem;
+	padding: 1.5rem;
 	margin-bottom: 9rem;
+	background-color: white;
+	border-radius: 5rem;
+	box-shadow: -5px 0px 75px 5px rgba(0,0,0,0.08);
 }
 
 
@@ -205,6 +213,13 @@ footer {
 		grid-column: 1/3;
 	}
 
+
+	footer{
+		display: flex;
+		justify-content: center;
+		grid-column: 1/3;
+	}
+
 .test h2 {
 	text-align: center;
 	font-weight: 100;
@@ -221,7 +236,6 @@ footer {
 	transition: 0.2s;
 
 }
-
 
 .test:hover {
 	box-shadow: -5px 0px 75px 5px rgba(0,0,0,0.33);
@@ -252,12 +266,6 @@ p {
 
 
 
-
-footer {
-	display: flex;
-	justify-content: center;
-	grid-column: 1/3;
-}
 
 
 	header nav ul {
