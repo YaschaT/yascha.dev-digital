@@ -213,6 +213,7 @@ main li  {
 	border-radius: 5rem;
 	margin-left: 35rem;
 	transition: 0.2s;
+
 }
 
 
@@ -220,6 +221,7 @@ main li:hover {
 	box-shadow: -5px 0px 75px 5px rgba(0,0,0,0.33);
 	transition: 0.7s;
 	margin-top: 50rem;
+	
 }
 
 li img {
