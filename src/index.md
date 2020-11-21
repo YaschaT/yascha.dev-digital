@@ -3,7 +3,7 @@ title: 'Homepage'
 layout: 'layouts/home.html'
 pagination:
   data: collections.blog
-  size: 2
+  size: 3
 permalink: '{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
 paginationPrevText: 'Bekijk nieuwere posts >'
 paginationNextText: 'Bekijk oudere posts >'

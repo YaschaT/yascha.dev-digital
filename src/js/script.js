@@ -1,17 +1,7 @@
 // hier komt je code
-console.log("Hallo wereld!");
+console.log("Welcome to Yascha-dev.digital!");
 
 document.addEventListener('DOMContentLoaded', () => {
-
-	// anime({
-	// 	targets: 'h1',
-	// 	translateX: [-400, 0],
-	// 	easing: 'easeOutExpo',
-	// 	duration: 1500,
-	// 	delay: 1000,
-	// 	opacity: [0, 1],
-	// })
-
 
   anime({
   targets: 'h1',
@@ -41,7 +31,6 @@ endDelay: function(el, i, l) {
 });
 
 
-
 	anime({
 		targets: 'p',
 		translateY: [50, 0],
@@ -65,10 +54,6 @@ endDelay: function(el, i, l) {
 	})
 
 
-
-
-
-
   anime({
     targets: '.wallpaper',
     translatex: [200, 0],
@@ -81,13 +66,11 @@ endDelay: function(el, i, l) {
   })
 
 
-
-
 	anime({
 		targets: 'img',
 		translateY: [200, 0],
 		easing: 'easeOutExpo',
-		duration: 2500,
+		duration: 2000,
 		delay: (el, i) => {
 			return 2000 + 100 * i;
 		},
