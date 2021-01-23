@@ -75,7 +75,6 @@ border-radius: 7rem;
 
 
 
-
 /* Start Second Section */
 main h2 {
 font-size: 3rem;
@@ -103,21 +102,6 @@ font-size: 1.6rem;
 transition: 0.79s;
 margin-bottom: 2rem;
 }
-
-.image1 {
-width: 90%;
-height: 50vh;
-margin-top: -50rem;
-opacity: 1;
-transition: 0.4s
-}
-
-.image1:hover  {
-opacity: 0.2;
-transition: 0.4s
-}
-
-
 
 
 /* Start Third Section */
