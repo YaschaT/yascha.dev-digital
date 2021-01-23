@@ -35,7 +35,7 @@ endDelay: function(el, i, l) {
 		targets: 'p',
 		translateY: [50, 0],
 		easing: 'easeOutExpo',
-		duration: 1500,
+		duration: 1000,
 		delay: (el, i) => {
 			return 1000 + 100 * i;
 		},
