@@ -231,7 +231,20 @@ footer p {
 footer .foot {
 	color: #0D01FF;
 	font-weight: 500;
+}
 
+footer .foot2 {
+	color: #0D01FF;
+	font-weight: 400;
+}
+
+
+
+
+footer a {
+	color:#0D01FF;
+	font-style: italic;
+	font-size: 1.1rem;
 }
 
 
